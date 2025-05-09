@@ -30,8 +30,7 @@ body {
 
 .menuHeader a:hover {
     background-color: #fe5b02;
-    color: #f8f9fa;
-    
+    color: #f8f9fa;   
 }
 
 .menuHeader > ul > li {
@@ -69,8 +68,57 @@ h1 {
     margin-right: 9vw;
 }
 
+.navPortfolio ul {
+    display: flex;
+    height: 450px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    gap: 10%;
+    padding: 10px;
+}
+
+img {
+    border: 2px solid #212529;
+    width: 100%;
+}
+
+.navPortfolio a {
+    color: #212529;
+    display: flex;
+    padding: 10px;
+    border: 2px solid #212529;
+    height: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    
+}
+
+.navPortfolio li {
+    display: flex;
+    border: 2px solid #212529;
+    margin: auto;
+    width: 80%;
+    padding: 3%;
+    flex-direction: column;
+}
+
+.navPortfolio a:hover {
+    background-color: #fe5b02;
+    color: #f8f9fa;
+}
+
 footer h2, li, a, p {
-    color: white;
+    color: #f8f9fa;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #fe5b02;
 }
 
 footer {
@@ -103,21 +151,4 @@ footer {
     justify-content: center;
     gap: 45px;
     margin-top: 35px;
-}
-
-.navPortfolio {
-    background-color: red;
-    display: flex;
-    height: 500px;
-    margin-top: 100px;
-    margin-left: 9vw;
-    margin-right: 9vw;
-    justify-content: space-around;
-}
-
-.navPortfolio > ul > li {
-    display: flex;
-    border: 2px solid #212529;
-    justify-content: space-around;
-    padding: 50px;  
 }
