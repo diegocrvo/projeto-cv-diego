@@ -4,12 +4,17 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    /* outline: 1px solid black; */
 }
 
 body {
     font-size: 16px;
     font-family: sans-serif, Arial, Helvetica;
     background-color: #f8f9fa;
+}
+
+header {
+    margin-bottom: 150px;
 }
 
 #iniciais {
@@ -50,38 +55,44 @@ body {
 }
 
 h1 {
-    align-items: start;
-    justify-content: left;
     font-size: 4em;
     color: #212529;
-    margin-top: 120px;
-    margin-left: 9vw;
+    margin-bottom: 60px;
 }
 
 .principal p {
-    align-items: start;
-    justify-content: left;
     font-size: 1.2em;
     color: #212529;
-    margin-top: 100px;
-    margin-left: 9vw;
-    margin-right: 9vw;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao {
+    width: 70%;
 }
 
 .navPortfolio ul {
     display: flex;
-    height: 450px;
-    margin-top: 40px;
-    margin-bottom: 80px;
-    margin-left: 9vw;
-    margin-right: 9vw;
     gap: 10%;
-    padding: 10px;
 }
 
 img {
     border: 2px solid #212529;
     width: 100%;
+}
+
+.navPortfolio li {
+    display: flex;
+    border: 2px solid #212529;
+    margin: auto;
+    width: 80%;
+    padding: 3%;
+    flex-direction: column;
 }
 
 .navPortfolio a {
@@ -98,21 +109,60 @@ img {
     
 }
 
-.navPortfolio li {
-    display: flex;
-    border: 2px solid #212529;
-    margin: auto;
-    width: 80%;
-    padding: 3%;
-    flex-direction: column;
-}
-
 .navPortfolio a:hover {
     background-color: #fe5b02;
     color: #f8f9fa;
 }
 
-footer h2, li, a, p {
+.formulario {
+    width: 70%;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #212529;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+form input {
+    border: 2px solid #212529;
+    background-color: #f8f9fa;
+    height: 30px;
+    
+}
+
+form textarea {
+    border: 2px solid #212529;
+    background-color: #f8f9fa;
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 2px solid #212529;
+    margin: auto;
+    padding: 10px;
+    width: 20%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #fe5b02;
+    color: #f8f9fa;
+}
+
+footer h2, footer li, footer a, footer p {
     color: #f8f9fa;
     transition: 0.3s;
 }
@@ -124,7 +174,7 @@ footer a:hover {
 footer {
     display: flex;
     background-color: #212529;
-    margin-top: 130px;
+    margin-top: 350px;
     padding: 45px 0 20px 0;
     flex-direction: column;
     bottom: 0;
