@@ -4,7 +4,6 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    /* outline: 1px solid black; */
 }
 
 body {
@@ -17,6 +16,7 @@ header {
     margin-bottom: 150px;
 }
 
+/* Estilização do menu*/
 #iniciais {
     font-size: 24px;
 }
@@ -32,7 +32,7 @@ header {
     font-weight: bold;
     transition: 0.3s;
 }
-
+/* Faz com que os botões do menu mudem de cor quando o cursor do mouse estiver sobre eles*/
 .menuHeader a:hover {
     background-color: #fe5b02;
     color: #f8f9fa;   
@@ -46,7 +46,7 @@ header {
     width: 100%;
     
 }
-
+/* Organização dos botões do menu*/
 .menuHeader > ul {
     display: flex;
     background-color: #f8f9fa;
@@ -60,6 +60,7 @@ h1 {
     margin-bottom: 60px;
 }
 
+/* Estilização do conteudo no centro do site*/
 .principal p {
     font-size: 1.2em;
     color: #212529;
@@ -76,6 +77,7 @@ h1 {
     width: 70%;
 }
 
+/* Organiza a área na seção portfólio do site*/
 .navPortfolio ul {
     display: flex;
     gap: 10%;
@@ -95,6 +97,7 @@ img {
     flex-direction: column;
 }
 
+/* Estilização do conteúdo na seção do portifólio no site*/
 .navPortfolio a {
     color: #212529;
     display: flex;
@@ -109,11 +112,13 @@ img {
     
 }
 
+/* Faz com que os botões do menu mudem de cor quando o cursor do mouse estiver sobre eles*/
 .navPortfolio a:hover {
     background-color: #fe5b02;
     color: #f8f9fa;
 }
 
+/* Responsável pela modelagem do formulário*/
 .formulario {
     width: 70%;
     min-width: 300px;
@@ -157,11 +162,13 @@ form button {
     transition: 0.3s;
 }
 
+/* Faz com que os botões do menu mudem de cor quando o cursor do mouse estiver sobre eles*/
 form button:hover {
     background-color: #fe5b02;
     color: #f8f9fa;
 }
 
+/* Estilização do rodapé da página do site*/
 footer h2, footer li, footer a, footer p {
     color: #f8f9fa;
     transition: 0.3s;
