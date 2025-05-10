@@ -26,11 +26,26 @@
             <div class="apresentacao">
                 <!-- Título da seção Sobre mim estilizado diretamento no html -->
                 <h1><span style="font-size: 40px;">Olá,</span><br> Eu sou <span style="color: #FE5B02;">Diêgo Carvalho</span> <br>Desenvolvedor <br>Full Stack</h1>
-                <p>
-                    Olá, sou Diêgo, desenvolvedor full stack curioso e apaixonado por tecnologia. Tenho uma personalidade comunicativa, determinada e sempre em busca de novos desafios. Minha missão é criar soluções de valor, transformando ideias em experiências inovadoras. <br><br>Sou apaixonado por cinema e tudo que envolve o mundo geek. Entre uma maratona de filmes e uma pilha de HQs, é onde me sinto em casa. Heróis, ficção, tecnologia e fantasia fazem parte do meu universo — e não troco isso por nada. <br><br>Tenho o sonho de morar no Canadá e construir uma carreira na área de tecnologia. Me encanta a ideia de viver em um lugar com qualidade de vida, diversidade cultural e tantas oportunidades na área tech. Estou sempre buscando aprender e me preparar para transformar esse sonho em realidade.
-                </p>
+                <p id="digitar"></p>
             </div>
         </section>
+        <!-- Script que faz o texto principal ser "digitado" na tela como uma maquina de escrever -->
+        <script>
+            const texto = "Olá, sou Diêgo, desenvolvedor full stack curioso e apaixonado por tecnologia. Tenho uma personalidade comunicativa, determinada e sempre em busca de novos desafios. Minha missão é criar soluções de valor, transformando ideias em experiências inovadoras. <br><br>Sou apaixonado por cinema e tudo que envolve o mundo geek. Entre uma maratona de filmes e uma pilha de HQs, é onde me sinto em casa. Heróis, ficção, tecnologia e fantasia fazem parte do meu universo — e não troco isso por nada. <br><br>Tenho o sonho de morar no Canadá e construir uma carreira na área de tecnologia. Me encanta a ideia de viver em um lugar com qualidade de vida, diversidade cultural e tantas oportunidades na área tech. Estou sempre buscando aprender e me preparar para transformar esse sonho em realidade.";
+
+            const elemento = document.getElementById("digitar");
+            let i = 0;
+
+            function digitar() {
+                if (i < texto.length) {
+                elemento.innerHTML = texto.slice(0, i);
+                i++;
+                setTimeout(digitar, 10);
+                }
+            }
+
+            digitar();
+        </script>
     </main>
     <!-- Rodapé do site -->
     <footer>
